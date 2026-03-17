@@ -2,30 +2,39 @@
 
 ### Project Directory
 ```
-AGENTIC_RAG_SUSTAINABILITY_TRANSFORMATION_ADVISOR
+DOCUMENT_INTELLIGENCE_PLATFORM/
 │
-├── data
-│   ├── ESG_guidelines.pdf
-│   ├── AI_adoption_framework.pdf
-│   └── digital_transformation_report.pdf
-│
-├── rag
+├── ingestion/
+│   ├── __init__.py   ✅
 │   ├── pdf_loader.py
 │   ├── text_splitter.py
-│   ├── embedder.py
-│   ├── vector_store.py
+│   └── pipeline.py
+│
+├── vector_db/
+│   ├── __init__.py   ✅
+│   └── pinecone_db.py
+│
+├── embeddings/
+│   ├── __init__.py   ✅
+│   └── embedder.py
+│
+├── retrieval/
+│   ├── __init__.py   ✅
 │   └── retriever.py
 │
-├── agents
-│   ├── sustainability_agent.py
-│   ├── ai_strategy_agent.py
-│   ├── engineering_agent.py
-│   └── synthesizer_agent.py
+├── modules/
+│   ├── __init__.py   ✅
+│   └── ...
 │
-├── models
-│   └── llm.py
+├── utils/
+│   ├── __init__.py   ✅
+│   └── helpers.py
 │
-├── main.py
+├── config/
+│   ├── __init__.py   ✅
+│   └── settings.py
+│
+├── app.py
 ├── requirements.txt
 └── README.md
 ```
